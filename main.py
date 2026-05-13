@@ -1,5 +1,16 @@
-import streamlit as st
+"""
+Portfolio Manager — Pure Python Desktop App
+Requires: pip install pandas openpyxl
+Run: python main.py
+"""
+import tkinter as tk
+from ui.main_window import MainWindow
 
-st.title("Portfolio Management Application")
+def main():
+    root = tk.Tk()
+    root.configure(bg='#f0f2f7')
+    app = MainWindow(root)
+    root.mainloop()
 
-st.success("Deployment Successful")
+if __name__ == '__main__':
+    main()
